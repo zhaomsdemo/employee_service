@@ -13,7 +13,7 @@ import java.util.HashMap;
 @Service
 public class EmployeeService {
 
-    @Value("${service.department.getURI}")
+    @Value("${service.department.getOne}")
     private String getDepartmentURI;
 
     @Autowired
