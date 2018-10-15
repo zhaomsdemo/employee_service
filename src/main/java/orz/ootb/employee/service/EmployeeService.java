@@ -9,6 +9,7 @@ import orz.ootb.employee.model.Employee;
 import orz.ootb.employee.repository.EmployeeRepository;
 
 import java.util.HashMap;
+import java.util.UUID;
 
 @Service
 public class EmployeeService {
@@ -28,5 +29,9 @@ public class EmployeeService {
         employeeRepository.save(employee);
 
         return employee;
+    }
+
+    public Employee getEmployeeById(String employeeId){
+        return employeeRepository.findById(employeeId).get();
     }
 }
