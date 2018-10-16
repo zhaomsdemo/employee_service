@@ -1,11 +1,10 @@
 package orz.ootb.employee.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 import orz.ootb.employee.model.Employee;
 import orz.ootb.employee.service.EmployeeService;
-
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/employee")
